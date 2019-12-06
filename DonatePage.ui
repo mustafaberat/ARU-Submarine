@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DonateForm</class>
+ <widget class="QWidget" name="DonateForm">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>370</width>
+    <height>363</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #103cff;
+color: white;
+</string>
+  </property>
+  <widget class="QLineEdit" name="donateSenderNameAndSurnameLineEdit">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>112</y>
+     <width>321</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border: 2px solid #333</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="donateSenderNameAndSurnameLabel">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>92</y>
+     <width>111</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Name and Surname</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="donateSenderIBANLineEdit">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>62</y>
+     <width>321</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="whatsThis">
+    <string/>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border: 2px solid #333</string>
+   </property>
+   <property name="maxLength">
+    <number>26</number>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="donateDonateButton">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>327</y>
+     <width>251</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Georgia</family>
+    </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="mouseTracking">
+    <bool>false</bool>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: #333333;</string>
+   </property>
+   <property name="text">
+    <string>Donate</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="donateSenderIBANLabel">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>42</y>
+     <width>231</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Sender IBAN</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="donateGetApprovalButton">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>202</y>
+     <width>321</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Georgia</family>
+    </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="mouseTracking">
+    <bool>false</bool>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: #333333;</string>
+   </property>
+   <property name="text">
+    <string>Get Approval</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="donateDonationAmountLabel">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>142</y>
+     <width>111</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Donation Amount (TL)</string>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="donateDonationAmountSpinBox">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>163</y>
+     <width>321</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border: 2px solid #333</string>
+   </property>
+   <property name="decimals">
+    <number>1</number>
+   </property>
+   <property name="maximum">
+    <double>1000.000000000000000</double>
+   </property>
+   <property name="singleStep">
+    <double>10.000000000000000</double>
+   </property>
+  </widget>
+  <widget class="QLCDNumber" name="donateAmountShowedByQLC">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>292</y>
+     <width>71</width>
+     <height>23</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="donateSenderShowedAgain">
+   <property name="geometry">
+    <rect>
+     <x>23</x>
+     <y>292</y>
+     <width>241</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Sender: </string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="donateIncomingMessageLineEdit">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>256</y>
+     <width>321</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border: 2px solid #333</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="donateIncomingMessageLabel">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>236</y>
+     <width>321</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Incoming Message to Your Phone</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="donateThanksTitle">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>12</y>
+     <width>321</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;Thanks Already For The Donation&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="donateHomeButton">
+   <property name="geometry">
+    <rect>
+     <x>19</x>
+     <y>327</y>
+     <width>61</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Georgia</family>
+    </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="mouseTracking">
+    <bool>false</bool>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: #333333;</string>
+   </property>
+   <property name="text">
+    <string>Home</string>
+   </property>
+  </widget>
+  <widget class="Line" name="line">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>30</y>
+     <width>321</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>donateSenderIBANLineEdit</tabstop>
+  <tabstop>donateSenderNameAndSurnameLineEdit</tabstop>
+  <tabstop>donateDonationAmountSpinBox</tabstop>
+  <tabstop>donateGetApprovalButton</tabstop>
+  <tabstop>donateIncomingMessageLineEdit</tabstop>
+  <tabstop>donateDonateButton</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

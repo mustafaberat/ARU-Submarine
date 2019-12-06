@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>HaveIdeaForm</class>
+ <widget class="QWidget" name="HaveIdeaForm">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>405</width>
+    <height>325</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">color: white; background-color: #103cff;</string>
+  </property>
+  <widget class="QPushButton" name="HaveIdeaSendButton">
+   <property name="geometry">
+    <rect>
+     <x>121</x>
+     <y>272</y>
+     <width>251</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Georgia</family>
+    </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="mouseTracking">
+    <bool>false</bool>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: #333333;</string>
+   </property>
+   <property name="text">
+    <string>Send</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="HaveIdeaIdeaLabel">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>104</y>
+     <width>141</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Idea</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="HaveIdeaTitle">
+   <property name="geometry">
+    <rect>
+     <x>47</x>
+     <y>16</y>
+     <width>321</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;Help Us Improve By Sharing Your Feedback&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="HaveIdeaNameSurnameLineEdit">
+   <property name="geometry">
+    <rect>
+     <x>47</x>
+     <y>76</y>
+     <width>321</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="whatsThis">
+    <string/>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border: 2px solid #333</string>
+   </property>
+   <property name="maxLength">
+    <number>26</number>
+   </property>
+  </widget>
+  <widget class="QLabel" name="HaveIdeaNotRobotLabel">
+   <property name="geometry">
+    <rect>
+     <x>48</x>
+     <y>216</y>
+     <width>321</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Please write &quot;I am not robot&quot;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="HaveIdeaNameSurnameLabel">
+   <property name="geometry">
+    <rect>
+     <x>47</x>
+     <y>56</y>
+     <width>231</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Name and Surname</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="HaveIdeaNotRobotLineEdit">
+   <property name="geometry">
+    <rect>
+     <x>48</x>
+     <y>236</y>
+     <width>321</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border: 2px solid #333</string>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="HaveIdeaIdeaTextEdit">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>126</y>
+     <width>321</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border: 2px solid #333</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="HaveIdeaHomeButton">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>272</y>
+     <width>61</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Georgia</family>
+    </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="mouseTracking">
+    <bool>false</bool>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: #333333;</string>
+   </property>
+   <property name="text">
+    <string>Home</string>
+   </property>
+  </widget>
+  <widget class="Line" name="HaveIdeaLine">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>34</y>
+     <width>301</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>HaveIdeaNameSurnameLineEdit</tabstop>
+  <tabstop>HaveIdeaIdeaTextEdit</tabstop>
+  <tabstop>HaveIdeaNotRobotLineEdit</tabstop>
+  <tabstop>HaveIdeaSendButton</tabstop>
+  <tabstop>HaveIdeaHomeButton</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>corporateForm</class>
+ <widget class="QWidget" name="corporateForm">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>403</width>
+    <height>313</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #103cff;
+color: white;</string>
+  </property>
+  <widget class="QScrollArea" name="corporatescrollArea">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>381</width>
+     <height>261</height>
+    </rect>
+   </property>
+   <property name="widgetResizable">
+    <bool>true</bool>
+   </property>
+   <widget class="QWidget" name="corporateScrollAreaWidgetContents">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>379</width>
+      <height>259</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: white;
+</string>
+    </property>
+    <widget class="QTextEdit" name="corporateContent">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>381</width>
+       <height>261</height>
+      </rect>
+     </property>
+     <property name="cursor" stdset="0">
+      <cursorShape>ArrowCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: 2px solid #333</string>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+     <property name="html">
+      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:18px; margin-bottom:9px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:110%; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Arial,Helvetica,sans-serif'; font-size:8pt; font-weight:600; color:#038eae; background-color:#ffffff;&quot;&gt;Amazing Submarine trip to the deep mystery seas&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:18px; margin-bottom:9px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:110%; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Arial,Helvetica,sans-serif'; font-size:8pt; color:#333333; background-color:#ffffff;&quot;&gt;Go for a once in a lifetime experience and discover the beautiful marine life and the underwater world of Mauritius!&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:9px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:18px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Arial,Helvetica,sans-serif'; font-size:8pt; color:#333333; background-color:#ffffff;&quot;&gt;As part of the submarine trip will get to visit a shipwreck, explore the rich coral reefs of Mauritius, and observe and encounter various species of fish.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:9px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:18px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Arial,Helvetica,sans-serif'; font-size:8pt; color:#333333; background-color:#ffffff;&quot;&gt;This is a wonderful experience for everyone visiting Mauritius. You will get to experience what you only dream about, when going underwater and staring into the crystal clear Indian Ocean water and discovering the rich sea life deep underwater.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:9px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:18px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Arial,Helvetica,sans-serif'; font-size:8pt; color:#333333; background-color:#ffffff;&quot;&gt;The submarine activity begins with a pre departure briefing on land, followed by a motor boat transfer to the main platform where you will board the submarine. Then the submarine will start its decent into the deep sea for a real fantasy adventure trip.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:9px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:18px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Arial,Helvetica,sans-serif'; font-size:8pt; color:#333333; background-color:#ffffff;&quot;&gt;You will cruise along the reef and view the corals from very close, explore the local rich marine life, visit the ship wreck of the famous Star Hope cruiser, and discover a 17th century anchor on the bottom of the ocean.&lt;/span&gt;&lt;img src=&quot;https://mauritiusattractions.com/slir/w364-c2x1/content/images/product-images/48/mauritius-submarine-excursion.jpg&quot; style=&quot;vertical-align: middle;&quot; style=&quot;float: right;&quot; /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:9px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:18px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Arial,Helvetica,sans-serif'; font-size:8pt; color:#333333; background-color:#ffffff;&quot;&gt;The submarine is air-conditioned with fully transparent-glassed cabin so you will enjoy exceptionally clear panoramic views of the extraordinary underwater world. It is designed so each passenger has individual observation window for viewing outside on the wonderful underwater world.&lt;/span&gt;&lt;span style=&quot; font-family:'Arial,Helvetica,sans-serif'; font-size:8pt; color:#333333;&quot;&gt;&lt;br /&gt;There is also a camera situated on the submarine’s bridge which projects the great views from outside through a TV screen located inside the submarine, giving you an additional view of the marine life.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:9px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:18px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Arial,Helvetica,sans-serif'; font-size:8pt; color:#333333; background-color:#ffffff;&quot;&gt;At 35 meters undersea, you may see some rare species and will explore the underwater world of Mauritius like on safari trip. Apart from the marine life, the sprawling exotic corals make this submarine trip a memorable experience.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:9px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:18px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Arial,Helvetica,sans-serif'; font-size:8pt; color:#333333; background-color:#ffffff;&quot;&gt;The pilots of the submarine are well educated in marine biology and are trained to provide a safe trip to all the travelers.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:13px; margin-bottom:13px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:110%; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Arial,Helvetica,sans-serif'; font-size:8pt; font-weight:600; color:#222222; background-color:#ffffff;&quot;&gt;Beverages will be provided during the trip.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:9px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:18px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Arial,Helvetica,sans-serif'; font-size:8pt; color:#333333; background-color:#ffffff;&quot;&gt;At the end of the trip each passenger will receive an individual certificate signed by the submarine pilot certifying your experience on the submarine.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="corporateCloseButton">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>280</y>
+     <width>381</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Georgia</family>
+    </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: #333;
+color: white;
+</string>
+   </property>
+   <property name="text">
+    <string>Close</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

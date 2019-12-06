@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>557</width>
+    <height>464</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">color: white; background-color: #103cff;</string>
+  </property>
+  <widget class="QLabel" name="PhotosContentLabel">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>250</y>
+     <width>321</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Some information about our trips&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="Line" name="PhotosLine">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>28</y>
+     <width>321</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="PhotosHomeButton">
+   <property name="geometry">
+    <rect>
+     <x>29</x>
+     <y>422</y>
+     <width>491</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Georgia</family>
+    </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="mouseTracking">
+    <bool>false</bool>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: #333333;</string>
+   </property>
+   <property name="text">
+    <string>Home</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="PhotosTitle">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>10</y>
+     <width>321</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;Photos&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="PhotosContentEditText">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>270</y>
+     <width>491</width>
+     <height>121</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border: 2px solid #333</string>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+   <property name="html">
+    <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Istanbul Trip: First inhabitants of Istanbul are dating back to second millennia BC, they were settled on the Asian side of the city. Its first name comes from Megara king Byzas who took his colonists here in the 7th century BC to establish a colony named Byzantium, the Greek name for a city on the Bosphorus. Byzas chose this spot after consulting an oracle of Delphi who told him to settle across from the &amp;quot;land of the blind&amp;quot;. Indeed, Byzas believed that earlier settlers must have been &amp;quot;blind&amp;quot; for overlooking this superb location at the entrance of the Bosphorus strait, only access to the Black Sea.&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;In the 6th century BC Persians ruled the city and than Alexander the Great took it over after 4th century BC, which was a peaceful period until the 2nd century BC.&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;In 193 AD Roman emperor Septimus Severus conquered the city and it remained under the Roman rule until 4th century AD, when emperor Constantine the Great made Byzantium the capital of entire Roman Empire and gave it his name: Constantinople, and Eastern Roman Empire was called Byzantine Empire after 5th century. The city was built on seven hills, like Rome.&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Early Byzantine emperors filled their city with the treasures of the ancient world, especially between 4th and 6th centuries with a population exceeded half a million. In 532 during the reign of Justinian I, riots destroyed the city. But it was rebuilt and outstanding structures such as Hagia Sophia stand as monuments to the golden age of Byzantines.&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Istanbul's latter history is full intrigues and sieges, it was besieged by the Arabs in the 7th and 8th centuries and by the Barbarians in the 9th and 10th, but ruled by the Fourth Crusade between 1204-1261 who destroyed and sacked all the wealth. After this, Constantinople did not regain its former richness nor strength.&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Ottoman Turks lead by Sultan Mehmet II conquered Constantinople in 1453. Renamed Islambol, the city became the capital of the Ottoman Empire. Between 15th and 16th centuries, sultans built many mosques and public buildings, topping the population again around half million by the mid 1500's, Istanbul was a major cultural, political, and commercial center. The name &amp;quot;Istanbul&amp;quot; was derived from a combination of &amp;quot;Islambol&amp;quot; (&amp;quot;city of Islam&amp;quot; in Turkish) and &amp;quot;eis tin Polin&amp;quot; (&amp;quot;to the City&amp;quot; in Greek) throughout the centuries.&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Ottoman rule lasted until World War I when Istanbul was occupied by the allied troops. After years of struggle led by Ataturk against the occupying forces, the Republic of Turkey was born in 1923 and the capital was moved to Ankara province. But Istanbul has continued to expand dramatically; today its population is over 13 million and still increases constantly. It continues to be the commercial and cultural center of Turkey.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="PhotosPhotoToLabel">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>50</y>
+     <width>461</width>
+     <height>181</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border: 2px solid white;</string>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:18pt;&quot;&gt;Photos&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>PhotosContentEditText</tabstop>
+  <tabstop>PhotosHomeButton</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

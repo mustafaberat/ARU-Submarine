@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>308</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">color: white; background-color: #103cff;</string>
+  </property>
+  <widget class="QPushButton" name="TripAdviceSendButton">
+   <property name="geometry">
+    <rect>
+     <x>114</x>
+     <y>261</y>
+     <width>251</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Georgia</family>
+    </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="mouseTracking">
+    <bool>false</bool>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: #333333;</string>
+   </property>
+   <property name="text">
+    <string>Send</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="TripAdviceNameSurnameLineEdit">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>63</y>
+     <width>321</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="whatsThis">
+    <string/>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border: 2px solid #333</string>
+   </property>
+   <property name="maxLength">
+    <number>26</number>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="TripAdviceCityNameLineEdit">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>117</y>
+     <width>161</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border: 2px solid #333</string>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="TripAdviceLocationEditText">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>168</y>
+     <width>321</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border: 2px solid #333</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="TripAdviceLocationLabel">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>146</y>
+     <width>141</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Locations &amp; Reason</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="TripAdviceCityNameLabel">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>97</y>
+     <width>161</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>City Name</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="TripAdviceNameSurnameLabel">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>43</y>
+     <width>231</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Name and Surname</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="TripAdviceTitle">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>10</y>
+     <width>321</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;Give A Location Address Where You Want To Go&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="TripAdviceStateNameLabel">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>96</y>
+     <width>161</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>State Name</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="TripAdviceStateNameLineEdit">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>116</y>
+     <width>161</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border: 2px solid #333</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="TripAdviceHomeButton">
+   <property name="geometry">
+    <rect>
+     <x>41</x>
+     <y>262</y>
+     <width>71</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Georgia</family>
+    </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="mouseTracking">
+    <bool>false</bool>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: #333333;</string>
+   </property>
+   <property name="text">
+    <string>Home</string>
+   </property>
+  </widget>
+  <widget class="Line" name="TripAdviceLine">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>23</y>
+     <width>321</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>TripAdviceNameSurnameLineEdit</tabstop>
+  <tabstop>TripAdviceCityNameLineEdit</tabstop>
+  <tabstop>TripAdviceStateNameLineEdit</tabstop>
+  <tabstop>TripAdviceLocationEditText</tabstop>
+  <tabstop>TripAdviceSendButton</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
