@@ -7,8 +7,30 @@
 # WARNING! All changes made in this file will be lost!
 
 from PyQt5 import QtCore, QtGui, QtWidgets
-
+import sqlite3
+import managerPage
+dbase = sqlite3.connect('ARU_Submarine_Project_Data_Base.db')
 class Ui_Dialog(object):
+    def checkInfos(self):
+        username = self.usernameLineEdit.text().format(str)
+        password = self.passwordLineEdit.text().format(str)
+        result = dbase.execute(''' SELECT * FROM Managers WHERE Username = ? AND Password = ?''', (username,password))
+        if (len(result.fetchall())>0):
+            self.goManagerPage()
+        else :
+            self.giveError()
+    def goManagerPage(self):
+        self.window = QtWidgets.QWidget()
+        self.ui = managerPage.Ui_Dialog()
+        self.ui.setupUi(self.window)
+        self.window.show()
+    def giveError(self):
+        msgBox = QtWidgets.QMessageBox()
+        msgBox.setIcon(QtWidgets.QMessageBox.Warning)
+        msgBox.setWindowTitle("Check Page")
+        msgBox.setText("Please check your information.")
+        msgBox.setStandardButtons(QtWidgets.QMessageBox.Ok)
+        msgBox.exec_()
     def setupUi(self, Dialog):
         Dialog.setObjectName("Dialog")
         Dialog.resize(387, 215)
@@ -35,6 +57,7 @@ class Ui_Dialog(object):
         self.logInButton.setAutoFillBackground(False)
         self.logInButton.setStyleSheet("background-color: #333333;")
         self.logInButton.setObjectName("logInButton")
+        self.logInButton.clicked.connect(self.checkInfos)
         self.GetTicketNameSurnameLabel = QtWidgets.QLabel(Dialog)
         self.GetTicketNameSurnameLabel.setGeometry(QtCore.QRect(30, 97, 111, 16))
         self.GetTicketNameSurnameLabel.setObjectName("GetTicketNameSurnameLabel")
@@ -45,7 +68,7 @@ class Ui_Dialog(object):
         self.usernameLineEdit.setGeometry(QtCore.QRect(30, 67, 331, 21))
         self.usernameLineEdit.setWhatsThis("")
         self.usernameLineEdit.setStyleSheet("border: 2px solid #333")
-        self.usernameLineEdit.setMaxLength(11)
+        self.usernameLineEdit.setMaxLength(35)
         self.usernameLineEdit.setObjectName("usernameLineEdit")
         self.closeButton = QtWidgets.QPushButton(Dialog)
         self.closeButton.setGeometry(QtCore.QRect(30, 160, 71, 23))
@@ -57,6 +80,7 @@ class Ui_Dialog(object):
         self.closeButton.setAutoFillBackground(False)
         self.closeButton.setStyleSheet("background-color: #333333;")
         self.closeButton.setObjectName("closeButton")
+        self.closeButton.clicked.connect(Dialog.close)
         self.GetTicketTitle = QtWidgets.QLabel(Dialog)
         self.GetTicketTitle.setGeometry(QtCore.QRect(30, 16, 321, 16))
         self.GetTicketTitle.setObjectName("GetTicketTitle")

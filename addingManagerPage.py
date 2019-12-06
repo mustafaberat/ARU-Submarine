@@ -7,8 +7,34 @@
 # WARNING! All changes made in this file will be lost!
 
 from PyQt5 import QtCore, QtGui, QtWidgets
+import sqlite3
+dbase = sqlite3.connect('ARU_Submarine_Project_Data_Base.db')
 
 class Ui_Dialog(object):
+    def addManager(self):
+        username = self.usernameLineEdit.text().format(str)
+        password = self.passwordLineEdit.text().format(str)
+        if (len(username) > 0 and len(password) > 0):
+            dbase.execute(''' INSERT INTO Managers(Username,Password) VALUES(?,?)''', (username, password))
+            dbase.commit()
+            dbase.close()
+            self.successfullyAdded()
+        else:
+            self.giveError()
+    def successfullyAdded(self):
+        msgBox = QtWidgets.QMessageBox()
+        msgBox.setIcon(QtWidgets.QMessageBox.Information)
+        msgBox.setWindowTitle("Successfully Added")
+        msgBox.setText("Thank you. Successfully Added.")
+        msgBox.setStandardButtons(QtWidgets.QMessageBox.Ok)
+        msgBox.exec_()
+    def giveError(self):
+        msgBox = QtWidgets.QMessageBox()
+        msgBox.setIcon(QtWidgets.QMessageBox.Warning)
+        msgBox.setWindowTitle("Check Page")
+        msgBox.setText("Please check your information.")
+        msgBox.setStandardButtons(QtWidgets.QMessageBox.Ok)
+        msgBox.exec_()
     def setupUi(self, Dialog):
         Dialog.setObjectName("Dialog")
         Dialog.resize(400, 219)
@@ -27,7 +53,6 @@ class Ui_Dialog(object):
         self.usernameLineEdit.setGeometry(QtCore.QRect(40, 67, 331, 21))
         self.usernameLineEdit.setWhatsThis("")
         self.usernameLineEdit.setStyleSheet("border: 2px solid #333")
-        self.usernameLineEdit.setMaxLength(11)
         self.usernameLineEdit.setObjectName("usernameLineEdit")
         self.GetTicketLine = QtWidgets.QFrame(Dialog)
         self.GetTicketLine.setGeometry(QtCore.QRect(40, 30, 321, 16))
@@ -47,6 +72,7 @@ class Ui_Dialog(object):
         self.logInButton.setAutoFillBackground(False)
         self.logInButton.setStyleSheet("background-color: #333333;")
         self.logInButton.setObjectName("logInButton")
+        self.logInButton.clicked.connect(self.addManager)
         self.GetTicketNameSurnameLabel = QtWidgets.QLabel(Dialog)
         self.GetTicketNameSurnameLabel.setGeometry(QtCore.QRect(40, 97, 111, 16))
         self.GetTicketNameSurnameLabel.setObjectName("GetTicketNameSurnameLabel")
@@ -60,6 +86,7 @@ class Ui_Dialog(object):
         self.closeButton.setAutoFillBackground(False)
         self.closeButton.setStyleSheet("background-color: #333333;")
         self.closeButton.setObjectName("closeButton")
+        self.closeButton.clicked.connect(Dialog.close)
 
         self.retranslateUi(Dialog)
         QtCore.QMetaObject.connectSlotsByName(Dialog)

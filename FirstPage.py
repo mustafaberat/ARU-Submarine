@@ -7,8 +7,19 @@
 # WARNING! All changes made in this file will be lost!
 
 from PyQt5 import QtCore, QtGui, QtWidgets
-
+import HomePage
+import logInManagerPage
 class Ui_Dialog(object):
+    def goManagerPage(self):
+        self.window = QtWidgets.QWidget()
+        self.ui = logInManagerPage.Ui_Dialog()
+        self.ui.setupUi(self.window)
+        self.window.show()
+    def goHomePage(self):
+        self.window = QtWidgets.QWidget()
+        self.ui = HomePage.Ui_HomePage()
+        self.ui.setupUi(self.window)
+        self.window.show()
     def setupUi(self, Dialog):
         Dialog.setObjectName("Dialog")
         Dialog.resize(535, 331)
@@ -23,6 +34,7 @@ class Ui_Dialog(object):
         self.customerButton.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
         self.customerButton.setStyleSheet("background-color: #333333; color: white;")
         self.customerButton.setObjectName("customerButton")
+        self.customerButton.clicked.connect(self.goHomePage)
         self.managerButton = QtWidgets.QPushButton(Dialog)
         self.managerButton.setGeometry(QtCore.QRect(40, 280, 211, 31))
         font = QtGui.QFont()
@@ -31,6 +43,7 @@ class Ui_Dialog(object):
         self.managerButton.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
         self.managerButton.setStyleSheet("background-color: #333333; color: white;")
         self.managerButton.setObjectName("managerButton")
+        self.managerButton.clicked.connect(self.goManagerPage)
         self.HomePageWelcomeTitle = QtWidgets.QLabel(Dialog)
         self.HomePageWelcomeTitle.setGeometry(QtCore.QRect(80, 10, 381, 61))
         self.HomePageWelcomeTitle.setStyleSheet(".anasayfaHosgeldinizYazisi{\n"
