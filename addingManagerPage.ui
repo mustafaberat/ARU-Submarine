@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>219</height>
+    <width>447</width>
+    <height>448</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -19,8 +19,8 @@
   <widget class="QLineEdit" name="passwordLineEdit">
    <property name="geometry">
     <rect>
-     <x>40</x>
-     <y>117</y>
+     <x>64</x>
+     <y>357</y>
      <width>331</width>
      <height>21</height>
     </rect>
@@ -41,7 +41,7 @@
   <widget class="QLabel" name="GetTicketTitle">
    <property name="geometry">
     <rect>
-     <x>40</x>
+     <x>71</x>
      <y>10</y>
      <width>321</width>
      <height>21</height>
@@ -54,8 +54,8 @@
   <widget class="QLineEdit" name="usernameLineEdit">
    <property name="geometry">
     <rect>
-     <x>40</x>
-     <y>67</y>
+     <x>64</x>
+     <y>307</y>
      <width>331</width>
      <height>21</height>
     </rect>
@@ -73,7 +73,7 @@
   <widget class="Line" name="GetTicketLine">
    <property name="geometry">
     <rect>
-     <x>40</x>
+     <x>71</x>
      <y>30</y>
      <width>321</width>
      <height>16</height>
@@ -86,8 +86,8 @@
   <widget class="QLabel" name="GetTicketIdentityNumberLabel">
    <property name="geometry">
     <rect>
-     <x>40</x>
-     <y>47</y>
+     <x>64</x>
+     <y>287</y>
      <width>231</width>
      <height>16</height>
     </rect>
@@ -96,11 +96,11 @@
     <string>Username</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="logInButton">
+  <widget class="QPushButton" name="addButton">
    <property name="geometry">
     <rect>
-     <x>120</x>
-     <y>160</y>
+     <x>144</x>
+     <y>400</y>
      <width>251</width>
      <height>23</height>
     </rect>
@@ -129,8 +129,8 @@
   <widget class="QLabel" name="GetTicketNameSurnameLabel">
    <property name="geometry">
     <rect>
-     <x>40</x>
-     <y>97</y>
+     <x>64</x>
+     <y>337</y>
      <width>111</width>
      <height>16</height>
     </rect>
@@ -142,8 +142,8 @@
   <widget class="QPushButton" name="closeButton">
    <property name="geometry">
     <rect>
-     <x>40</x>
-     <y>160</y>
+     <x>64</x>
+     <y>400</y>
      <width>71</width>
      <height>23</height>
     </rect>
@@ -169,11 +169,54 @@
     <string>Close</string>
    </property>
   </widget>
+  <widget class="QTableWidget" name="tableWidget">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>60</y>
+     <width>381</width>
+     <height>192</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border: 2px solid black</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="deleteButton">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>260</y>
+     <width>101</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Georgia</family>
+    </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="mouseTracking">
+    <bool>false</bool>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: #333333;</string>
+   </property>
+   <property name="text">
+    <string>Delete</string>
+   </property>
+  </widget>
  </widget>
  <tabstops>
   <tabstop>usernameLineEdit</tabstop>
   <tabstop>passwordLineEdit</tabstop>
-  <tabstop>logInButton</tabstop>
+  <tabstop>addButton</tabstop>
   <tabstop>closeButton</tabstop>
  </tabstops>
  <resources/>

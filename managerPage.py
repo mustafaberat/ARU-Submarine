@@ -7,32 +7,32 @@
 # WARNING! All changes made in this file will be lost!
 
 from PyQt5 import QtCore, QtGui, QtWidgets
-import LookDonationPage
-import LookIdeas
-import LookTickets
-import LookTripAdvice
+import lookDonationPage
+import lookIdeas
+import lookTickets
+import lookTripAdvice
 import addingManagerPage
 import sqlite3
 dbase = sqlite3.connect('ARU_Submarine_Project_Data_Base.db')
 class Ui_Dialog(object):
     def goLookDonation(self):
         self.window = QtWidgets.QWidget()
-        self.ui = LookDonationPage.Ui_Dialog()
+        self.ui = lookDonationPage.Ui_Dialog()
         self.ui.setupUi(self.window)
         self.window.show()
     def goLookIdeas(self):
         self.window = QtWidgets.QWidget()
-        self.ui = LookIdeas.Ui_Dialog()
+        self.ui = lookIdeas.Ui_Dialog()
         self.ui.setupUi(self.window)
         self.window.show()
     def goLookTickets(self):
         self.window = QtWidgets.QWidget()
-        self.ui = LookTickets.Ui_Dialog()
+        self.ui = lookTickets.Ui_Dialog()
         self.ui.setupUi(self.window)
         self.window.show()
     def goLookTripAdvice(self):
         self.window = QtWidgets.QWidget()
-        self.ui = LookTripAdvice.Ui_Dialog()
+        self.ui = lookTripAdvice.Ui_Dialog()
         self.ui.setupUi(self.window)
         self.window.show()
     def goAddingManager(self):
